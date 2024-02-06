@@ -1,0 +1,2 @@
+<!--pages/test/test.wxml-->
+<button class="container" bindtap="navigate">生成试卷</button>

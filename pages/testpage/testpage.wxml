@@ -1,0 +1,16 @@
+<!--pages/testpage/testpage.wxml-->
+<view class="page">
+  <!--标题-->
+  <view class='page__hd'>
+    <view class="page__title">
+      {{index+1}}、{{questionList[index].question}}
+    </view>
+  </view>
+  <!--内容-->
+  <view class="page__bd">
+    <radio-group class="radio-group">
+      <label class="radio my-choosebox">
+      </label>
+    </radio-group>
+  </view>
+</view>
