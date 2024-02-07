@@ -1,21 +1,20 @@
 /* pages/testpage/testpage.wxss */
-/* pages/test/test.wxss */
 .page {
-  padding: 150rpx;
+  margin-top: 80px;
 }
-.page__bd {
-  padding: 10rpx;
+
+.radio-group {
+  border-bottom: 1px solid #ddd;
 }
-.my-choosebox {
-  display: block;
-  margin-bottom: 20rpx;
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ddd;
+  padding: 5px;
 }
-.toindex-btn {
-  margin-top: 20rpx;
-  display:inline-block;
-  line-height:2.3;
-  font-size:13px;
-  padding:0 1.34em;
-  color:#576b95;
-  text-decoration:underline;
+
+.radio text {
+  display: flex;
+  flex-direction: row;
 }

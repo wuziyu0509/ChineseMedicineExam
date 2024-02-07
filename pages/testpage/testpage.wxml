@@ -1,16 +1,18 @@
 <!--pages/testpage/testpage.wxml-->
 <view class="page">
-  <!--标题-->
-  <view class='page__hd'>
-    <view class="page__title">
-      {{index+1}}、{{questionList[index].question}}
-    </view>
-  </view>
-  <!--内容-->
-  <view class="page__bd">
-    <radio-group class="radio-group">
-      <label class="radio my-choosebox">
-      </label>
-    </radio-group>
-  </view>
+  <view class="page_hd">{{questionList[index].question}}</view>
+  <radio-group bindchange="radioChange" data-qid="{{QID}}">
+    <label class="option">
+      <radio value="A" /> A. {{questionList[index].A}}
+    </label>
+    <label class="option">
+      <radio value="B" /> B. {{questionList[index].B}}
+    </label>
+    <label class="option">
+      <radio value="C" /> C. {{questionList[index].C}}
+    </label>
+    <label class="option">
+      <radio value="D" /> D. {{questionList[index].D}}
+    </label>
+  </radio-group>
 </view>
